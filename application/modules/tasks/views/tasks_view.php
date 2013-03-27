@@ -1,5 +1,10 @@
 <?php
 
+define('TAG', 'tasks_view');
+
+
+ Modules::run('log/to_apache', TAG, "tasks_view");
+ 
 echo base_url();
 
 echo anchor('tasks/create', '<p>Create New Tasks</p>');
